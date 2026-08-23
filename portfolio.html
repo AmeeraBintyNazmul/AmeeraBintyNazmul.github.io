@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name — Economics Research Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .active-nav { color: #1d4ed8 !important; position: relative; }
+        .active-nav::after {
+            content: '';
+            position: absolute;
+            bottom: -17px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #1d4ed8;
+            border-radius: 2px;
+        }
+        .fade-in { animation: fadeIn 0.4s ease-in-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 px-6 py-4 flex justify-between items-center">
+        <div class="font-semibold text-lg text-slate-900 tracking-tight">Portfolio</div>
+        <div class="flex gap-5 text-sm font-medium text-slate-500">
+            <button onclick="showSection('profile')" class="hover:text-blue-700 transition-colors nav-btn active-nav" data-target="profile">Profile</button>
+            <button onclick="showSection('research')" class="hover:text-blue-700 transition-colors nav-btn" data-target="research">Research</button>
+            <button onclick="showSection('projects')" class="hover:text-blue-700 transition-colors nav-btn" data-target="projects">Projects</button>
+            <button onclick="showSection('experience')" class="hover:text-blue-700 transition-colors nav-btn" data-target="experience">Experience</button>
+        </div>
+    </nav>
+
+    <!-- Section 1: Profile -->
+    <section id="profile" class="section-view max-w-4xl mx-auto px-6 py-14 fade-in">
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 md:p-10">
+            <div class="flex flex-col md:flex-row gap-6 items-start">
+                <div class="w-20 h-20 rounded-full bg-gradient-to-br from-slate-600 to-slate-800 flex items-center justify-center text-white text-xl font-semibold shrink-0">
+                    YN
+                </div>
+                <div class="flex-1">
+                    <h1 class="text-2xl md:text-3xl font-bold text-slate-900 mb-1">Your Name</h1>
+                    <p class="text-base text-blue-700 font-medium mb-4">Economics Graduate · Aspiring Researcher & Educator</p>
+                    <p class="text-slate-600 leading-relaxed text-sm md:text-base mb-5">
+                        Recent MSS graduate in Economics from Bangladesh University of Professionals with hands-on training in 
+                        quantitative and qualitative research methods. I have worked on panel econometrics, survey-based fieldwork, 
+                        and thematic analysis through academic projects and a faculty-led research initiative. I am eager to contribute 
+                        to teaching and research in development economics and education policy.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-5">
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-full border border-slate-200">Panel Econometrics</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-full border border-slate-200">Survey Research</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-full border border-slate-200">Qualitative Methods</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-full border border-slate-200">Stata</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-full border border-slate-200">NVivo</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-full border border-slate-200">EViews</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="#" class="px-4 py-2 bg-slate-900 text-white text-sm font-medium rounded-lg hover:bg-slate-800 transition-colors">Download CV</a>
+                        <a href="#" class="px-4 py-2 border border-slate-300 text-slate-700 text-sm font-medium rounded-lg hover:bg-slate-50 transition-colors">LinkedIn</a>
+                        <a href="mailto:your.email@example.com" class="px-4 py-2 border border-slate-300 text-slate-700 text-sm font-medium rounded-lg hover:bg-slate-50 transition-colors">Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="mt-6 bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
+            <h2 class="text-lg font-bold text-slate-900 mb-5">Education</h2>
+            <div class="space-y-5">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-1">
+                    <div>
+                        <div class="font-semibold text-slate-900">MSS in Economics</div>
+                        <div class="text-sm text-slate-600">Bangladesh University of Professionals</div>
+                    </div>
+                    <div class="text-sm text-slate-500 md:text-right">Aug 2025 – Jul 2026 · CGPA: 3.89</div>
+                </div>
+                <div class="border-t border-slate-100"></div>
+                <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-1">
+                    <div>
+                        <div class="font-semibold text-slate-900">BSS Honors in Economics</div>
+                        <div class="text-sm text-slate-600">Bangladesh University of Professionals</div>
+                    </div>
+                    <div class="text-sm text-slate-500 md:text-right">Oct 2021 – Aug 2025 · CGPA: 3.85</div>
+                </div>
+                <div class="border-t border-slate-100"></div>
+                <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-1">
+                    <div>
+                        <div class="font-semibold text-slate-900">Higher Secondary Certificate (HSC)</div>
+                        <div class="text-sm text-slate-600">Birshreshtha Munshi Abdur Rouf Public College</div>
+                    </div>
+                    <div class="text-sm text-slate-500 md:text-right">Jul 2018 – Jun 2020 · GPA: 5.00</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Research -->
+    <section id="research" class="section-view hidden max-w-4xl mx-auto px-6 py-14 fade-in">
+        <h2 class="text-xl font-bold text-slate-900 mb-6">Research & Publications</h2>
+
+        <!-- Publication -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-7 mb-5 hover:shadow-md transition-shadow">
+            <div class="flex items-start justify-between mb-3">
+                <span class="px-2.5 py-1 bg-green-50 text-green-700 text-xs font-bold rounded-md border border-green-100">PUBLISHED</span>
+                <span class="text-xs text-slate-400 font-medium">Feb 2025</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">ChatGPT vs Gemini: A Comparative Analysis of the Factors Influencing Academic Performance among Bangladeshi University Students</h3>
+            <p class="text-slate-500 text-sm mb-3 italic">Journal of Humanities and Social Sciences Studies</p>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Co-authored peer-reviewed research examining student responses to AI tool usage across 12 universities in Bangladesh. 
+                Applied ordinal logistic regression on primary survey data (n=404) collected through a structured online questionnaire.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Ordinal Logistic Regression</span>
+                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">n=404</span>
+                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Multi-site Study</span>
+            </div>
+            <a href="#" class="text-blue-700 text-sm font-semibold hover:underline">View Publication (DOI) →</a>
+        </div>
+
+        <!-- Thesis -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-7 hover:shadow-md transition-shadow">
+            <div class="flex items-start justify-between mb-3">
+                <span class="px-2.5 py-1 bg-amber-50 text-amber-700 text-xs font-bold rounded-md border border-amber-100">MSS THESIS</span>
+                <span class="text-xs text-slate-400 font-medium">Jan – Jul 2026</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Foreign Finance and Governance Impact on the Renewable Energy–Growth–Environment Nexus: A Comparison Analysis of SAARC and ASEAN</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                This study estimates the disaggregated effects of official development assistance, foreign direct investment, and personal remittances 
+                on renewable energy consumption, and assesses whether government effectiveness and political stability moderate these channels. 
+                It further extends the analysis to environmental outcomes using PM2.5 mean values. Using a balanced annual panel of six ASEAN and five 
+                SAARC economies over 1996–2024, and accounting for cross-sectional dependence and slope heterogeneity, the study applies 
+                cross-sectionally augmented ARDL and distributed-lag estimators, Driscoll–Kraay regressions, Dumitrescu–Hurlin causality tests, 
+                and a pooled bloc-difference test.
+            </p>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Seventeen of twenty-four channels form stable long-run relationships. In ASEAN, the long run is income-led, with no independent 
+                effect of foreign finance identified. In SAARC, government effectiveness shows a robust negative association with renewable energy 
+                consumption across all estimators. The two blocs differ significantly in their long-run relationships while remaining indistinguishable 
+                in the short run, and growth and renewable energy are causally neutral. Government effectiveness is associated with lower fine-particulate 
+                exposure in ASEAN, though this link is not stable, and renewable consumption shows no direct air-quality effect in either region. 
+                These findings suggest that raising the volume of foreign finance alone is unlikely to advance the renewable transition; 
+                country-specific, governance-sensitive strategies are needed.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5">
+                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">CS-ARDL</span>
+                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Panel Cointegration</span>
+                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Driscoll–Kraay</span>
+                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Dumitrescu–Hurlin</span>
+                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Stata</span>
+                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">EViews</span>
+            </div>
+            <div class="flex gap-3">
+                <a href="#" class="px-4 py-2 bg-blue-700 text-white text-sm font-medium rounded-lg hover:bg-blue-800 transition-colors">📊 Data & Do-File</a>
+                <span class="px-4 py-2 text-slate-500 text-sm font-medium">Full thesis available upon request</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Projects -->
+    <section id="projects" class="section-view hidden max-w-4xl mx-auto px-6 py-14 fade-in">
+        <h2 class="text-xl font-bold text-slate-900 mb-6">Academic Projects</h2>
+        <div class="grid md:grid-cols-2 gap-5">
+
+            <!-- Project 1 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow flex flex-col">
+                <div class="flex justify-between items-start mb-2">
+                    <span class="px-2.5 py-1 bg-indigo-50 text-indigo-700 text-xs font-bold rounded-md border border-indigo-100">UGC-FUNDED</span>
+                    <span class="text-xs text-slate-400 font-medium">Aug 2025 – Jul 2026</span>
+                </div>
+                <h3 class="text-base font-bold text-slate-900 mb-2">Curriculum Evaluation: GED Course at University Level</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-3 flex-1">
+                    Assisted a faculty researcher on a UGC-funded project. Conducted literature review, a 550-sample survey, 
+                    3 FGDs, 5 IDIs, and 1 KII. Applied thematic analysis within a constructivist framework to identify curriculum barriers.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Thematic Analysis</span>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Mixed Methods</span>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Survey Design</span>
+                </div>
+                <a href="#" class="text-blue-700 text-sm font-semibold hover:underline self-start">View Questionnaire Guide →</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow flex flex-col">
+                <div class="flex justify-between items-start mb-2">
+                    <span class="px-2.5 py-1 bg-rose-50 text-rose-700 text-xs font-bold rounded-md border border-rose-100">BSS PROJECT</span>
+                    <span class="text-xs text-slate-400 font-medium">Jan – Jul 2025</span>
+                </div>
+                <h3 class="text-base font-bold text-slate-900 mb-2">Eating Behavior & Food Choice Among Public University Students</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-3 flex-1">
+                    This study qualitatively explores the changes and factors influencing food choices among students living away from home 
+                    at four public universities in Dhaka. Using purposive sampling, 21 students were recruited and data were collected through 
+                    14 IDIs and 2 FGDs. Thematic analysis identified four broad categories — individual, social, physical, and university-related 
+                    factors — determining students' food decisions.
+                </p>
+                <p class="text-slate-600 text-sm leading-relaxed mb-3 flex-1">
+                    Dietary shifts included reduced intake of fish, vegetables, and fruit, higher junk food consumption, and irregular meal patterns, 
+                    driven by inaccessibility of nutritious meals, monotonous taste, limited healthy alternatives, academic pressures, and inadequate 
+                    cooking facilities. Notably, healthy food was perceived as unavailable and inaccessible rather than unaffordable. This is the first 
+                    study to highlight the influence of menstrual cycle, health shocks, and homesickness on food decisions of students living 
+                    independently in Dhaka.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">FGDs</span>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">IDIs</span>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">NVivo</span>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Thematic Analysis</span>
+                </div>
+                <a href="#" class="text-blue-700 text-sm font-semibold hover:underline self-start">View Project Folder →</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow flex flex-col">
+                <div class="flex justify-between items-start mb-2">
+                    <span class="px-2.5 py-1 bg-teal-50 text-teal-700 text-xs font-bold rounded-md border border-teal-100">DATA ANALYSIS</span>
+                    <span class="text-xs text-slate-400 font-medium">2024</span>
+                </div>
+                <h3 class="text-base font-bold text-slate-900 mb-2">RMG Export Performance Analysis</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-3 flex-1">
+                    Group coursework analyzing EPB data on Bangladesh's RMG sector (2014–2024). Cleaned data in Excel, 
+                    conducted trend analysis in Stata, and presented findings through a research poster.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Trend Analysis</span>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Excel</span>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Stata</span>
+                </div>
+                <div class="flex gap-3">
+                    <a href="#" class="text-blue-700 text-sm font-semibold hover:underline self-start">LinkedIn Post →</a>
+                    <a href="#" class="text-blue-700 text-sm font-semibold hover:underline self-start">Poster →</a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow flex flex-col">
+                <div class="flex justify-between items-start mb-2">
+                    <span class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-bold rounded-md border border-blue-100">COMMUNITY PROJECT</span>
+                    <span class="text-xs text-slate-400 font-medium">Aug – Dec 2024</span>
+                </div>
+                <h3 class="text-base font-bold text-slate-900 mb-2">Project Resilience — UN Millennium Fellowship</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-3 flex-1">
+                    Designed a community initiative addressing SDG 4 and SDG 10. Delivered educational support to underprivileged 
+                    child laborers through social responsibility networks and crowdfunding in Dhaka.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">SDG 4</span>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">SDG 10</span>
+                    <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Community Engagement</span>
+                </div>
+                <a href="#" class="text-blue-700 text-sm font-semibold hover:underline self-start">View on UN Site →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section 4: Experience & Skills -->
+    <section id="experience" class="section-view hidden max-w-4xl mx-auto px-6 py-14 fade-in">
+        <h2 class="text-xl font-bold text-slate-900 mb-6">Experience & Activities</h2>
+
+        <div class="space-y-5">
+            <!-- RA Role -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-7">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-base font-bold text-slate-900">Research Assistant</h3>
+                    <span class="text-xs text-slate-400 font-medium">Aug 2025 – Jul 2026</span>
+                </div>
+                <p class="text-sm text-slate-600 mb-1">Bangladesh University of Professionals</p>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Assisted a faculty researcher on a UGC-funded project evaluating the GED curriculum at the university level. 
+                    Gained practical experience in survey administration, qualitative data collection, and thematic analysis.
+                </p>
+            </div>
+
+            <!-- BUP Research Society -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-7">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-base font-bold text-slate-900">Head of Research & Development — BUP Research Society</h3>
+                    <span class="text-xs text-slate-400 font-medium">2023 – 2024</span>
+                </div>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Coordinated the "BUP National Research Project Contest 3.0," supporting the review process for over 100 research paper submissions. 
+                    Developed skills in academic event organization and peer review coordination.
+                </p>
+            </div>
+
+            <!-- GDSC -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-7">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-base font-bold text-slate-900">Core Member — Google Developers Student Clubs</h3>
+                    <span class="text-xs text-slate-400 font-medium">2023 – 2024</span>
+                </div>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Contributed to outreach strategies for online technical workshops, helping drive student engagement in tech-focused learning events.
+                </p>
+            </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="mt-6 bg-white rounded-2xl shadow-sm border border-slate-200 p-7">
+            <h3 class="text-base font-bold text-slate-900 mb-4">Certifications</h3>
+            <div class="grid md:grid-cols-3 gap-3">
+                <div class="p-3 rounded-lg bg-slate-50 border border-slate-100">
+                    <div class="text-sm font-semibold text-slate-900">RWLP 2025</div>
+                    <div class="text-xs text-slate-500 mt-1">Bangladesh Research Society</div>
+                </div>
+                <div class="p-3 rounded-lg bg-slate-50 border border-slate-100">
+                    <div class="text-sm font-semibold text-slate-900">Millennium Fellowship 2024</div>
+                    <div class="text-xs text-slate-500 mt-1">MCN & UN Academic Impact</div>
+                </div>
+                <div class="p-3 rounded-lg bg-slate-50 border border-slate-100">
+                    <div class="text-sm font-semibold text-slate-900">Career Bootcamp 2023</div>
+                    <div class="text-xs text-slate-500 mt-1">BYLC</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="mt-6 bg-white rounded-2xl shadow-sm border border-slate-200 p-7">
+            <h3 class="text-base font-bold text-slate-900 mb-4">Skills</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+                <div class="p-2.5 rounded-lg border border-slate-200 text-center text-sm text-slate-700">Research & Writing</div>
+                <div class="p-2.5 rounded-lg border border-slate-200 text-center text-sm text-slate-700">Project Coordination</div>
+                <div class="p-2.5 rounded-lg border border-slate-200 text-center text-sm text-slate-700">NVivo (Intermediate)</div>
+                <div class="p-2.5 rounded-lg border border-slate-200 text-center text-sm text-slate-700">MS Office Suite</div>
+                <div class="p-2.5 rounded-lg border border-slate-200 text-center text-sm text-slate-700">Stata</div>
+                <div class="p-2.5 rounded-lg border border-slate-200 text-center text-sm text-slate-700">Canva</div>
+                <div class="p-2.5 rounded-lg border border-slate-200 text-center text-sm text-slate-700">EViews (Intermediate)</div>
+                <div class="p-2.5 rounded-lg border border-slate-200 text-center text-sm text-slate-700">Translation (En↔Bn)</div>
+            </div>
+        </div>
+
+        <!-- References -->
+        <div class="mt-6 bg-white rounded-2xl shadow-sm border border-slate-200 p-7">
+            <h3 class="text-base font-bold text-slate-900 mb-4">References</h3>
+            <div class="grid md:grid-cols-2 gap-4 text-sm">
+                <div class="p-4 rounded-lg bg-slate-50 border border-slate-100">
+                    <div class="font-semibold text-slate-900">Adib Ahmed</div>
+                    <div class="text-slate-600">Assistant Professor, Dept. of Economics, BUP</div>
+                    <div class="text-slate-500 mt-1">adib.ahmed@bup.edu.bd</div>
+                </div>
+                <div class="p-4 rounded-lg bg-slate-50 border border-slate-100">
+                    <div class="font-semibold text-slate-900">Naimur Rahman Rahat</div>
+                    <div class="text-slate-600">Assistant Professor, Dept. of Economics, BUP</div>
+                    <div class="text-slate-500 mt-1">naimur.rahman@bup.edu.bd</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="max-w-4xl mx-auto px-6 py-8 text-center text-slate-400 text-sm border-t border-slate-200 mt-8">
+        <p>© 2026 · Built with care for academic recruitment</p>
+    </footer>
+
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('.section-view').forEach(el => {
+                el.classList.add('hidden');
+                el.classList.remove('fade-in');
+            });
+            const target = document.getElementById(id);
+            target.classList.remove('hidden');
+            target.classList.add('fade-in');
+
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('active-nav', 'text-blue-700');
+                btn.classList.add('text-slate-500');
+            });
+            const activeBtn = document.querySelector('[data-target="' + id + '"]');
+            activeBtn.classList.add('active-nav', 'text-blue-700');
+            activeBtn.classList.remove('text-slate-500');
+        }
+    </script>
+</body>
+</html>
